@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+header img {
+    width: 250px;
+    height: 250px;
+}
+
+main {
+    width: 100%;
+    padding: 10px;
+    background-color: lightpink;
+}
+
+footer {
+    padding: 10px;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.text-center {
+        text-align: center
+}
