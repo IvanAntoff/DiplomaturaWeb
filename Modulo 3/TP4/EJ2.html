@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej2</title>
+</head>
+<body id="body" style="width: 100vw; height: 100vh; background-color: gray; padding: 0px 0px; margin: 0px 0px">
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+        <div style="min-width: 300px; min-height: 300px;">
+            <p id="resultado">Cant. de caracteres: 0</p>
+            <input type="text" placeholder="Ingrese algún texto" style="min-width: 300px; min-height: 300px;" id="textarea">
+        </div>
+    </div>
+</body>
+<script>
+    var resultado = document.getElementById('resultado');
+    var texto = document.getElementById('textarea');
+
+    function calcularCaracteres(evento) {
+        resultado.innerText = ('Cant. de caracteres: '+evento.target.value.length)
+    }
+
+    texto.addEventListener('input', calcularCaracteres);
+</script>
+</html>
