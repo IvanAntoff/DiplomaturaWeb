@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej2</title>
+</head>
+
+<body id="body" style="width: 100vw; height: 100vh; background-color: gray; padding: 0px 0px; margin: 0px 0px">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%;">
+        <p><b>Alumnos aprobados:</b></p>
+        <ul id="resultado">
+
+        </ul>
+    </div>
+</body>
+<script>
+    var resultado = document.getElementById('resultado');
+
+    var alumnos = [
+        {
+            nombre: 'Juan Gomez',
+            nota: 7
+        }, {
+            nombre: 'Pedro Rodriguez',
+
+            nota: 4
+        }, {
+            nombre: 'Roxana García',
+            nota: 8
+        }, {
+            nombre: 'Luciano Lopez',
+            nota: 5
+        }, {
+            nombre: 'Fernanda Gimenez',
+            nota: 6
+        }, {
+            nombre: 'Florencia Martinez',
+            nota: 10
+        }, {
+            nombre: 'Raul Sanchez',
+            nota: 7
+        }, {
+            nombre: 'Sandra Figueroa',
+            nota: 8
+        }
+    ];
+
+
+    for (let i = 0; i < alumnos.length; i++) {
+        const alumno = alumnos[i];
+        console.log(alumno)
+        if(alumno.nota && alumno.nota >= 7){
+            var li = document.createElement("li");
+            var textoLi = document.createTextNode(alumno.nombre);
+            li.appendChild(textoLi)
+            resultado.appendChild(li);
+        }
+    }
+
+</script>
+
+</html>
