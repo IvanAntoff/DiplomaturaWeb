@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    min-width: 500px;
+    height: 100%;
+    min-height: 500px;
+    background-color: #BEAEE2;
+    color: #F9F9F9;
+    padding: 30px;
+}
+
+.titulo {
+    text-align: center;
+}
